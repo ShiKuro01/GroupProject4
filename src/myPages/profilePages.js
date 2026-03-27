@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePicture from '../assets/pp_azriel.JPG';
 
 const ProfilePages = () => {
   return (
@@ -11,7 +12,7 @@ const ProfilePages = () => {
           {/* Profile Picture (Absolute Position) */}
           <div className="absolute -bottom-12 left-8 w-28 h-28 bg-white rounded-2xl border-4 border-white shadow-sm overflow-hidden flex items-center justify-center">
             <img 
-              src="https://via.placeholder.com/150" 
+              src={profilePicture} 
               alt="Moch Azriel AP" 
               className="w-full h-full object-cover"
             />
