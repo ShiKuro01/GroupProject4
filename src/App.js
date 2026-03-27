@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProfilePages from './myPages/profilePages';
+import NaufalProfile from './myPages/naufalProfile';
+import NadaProfile from './myPages/nadaProfile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+       <Route path="/azriel" element={<ProfilePages />} />
+       <Route path="/naufal" element={<NaufalProfile />} />
+       <Route path="/nada" element={<NadaProfile />} />
+      </Routes>
+    </Router>
   );
 }
 
