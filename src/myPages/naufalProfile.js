@@ -5,12 +5,12 @@ const NaufalProfile = () => {
   const skills = ['ReactJS', 'Tailwind CSS', 'Kotlin', 'PostgreSQL', 'Laravel', 'Docker'];
 
   return (
-    <div className="min-h-screen bg-slate-100 py-2 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-slate-20 py-2 sm:px-6 lg:px-8">
       {/* Container Utama */}
       <div className="max-w-[80%] mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
         
         {/* Header / Banner Area */}
-        <div className="relative h-48 bg-gradient-to-r from-indigo-600 to-violet-700">
+        <div className="relative h-24 bg-gradient-to-r from-indigo-600 to-violet-700">
           <div className="absolute -bottom-16 left-8">
             <img 
               className="h-32 w-32 object-cover rounded-2xl border-4 border-white shadow-xl bg-white" 
@@ -81,6 +81,24 @@ const NaufalProfile = () => {
                 <p className="mt-4 text-gray-600 leading-relaxed text-justify">
                   Saya memiliki ketertarikan mendalam dalam eksplorasi teknologi digital modern. Saat ini saya sedang berfokus untuk menguasai Full Stack Development, pengembangan mobile menggunakan Kotlin, serta eksplorasi dalam industri game. Perjalanan saya di dunia teknologi dimulai dengan rasa penasaran terhadap bagaimana aplikasi dapat menyelesaikan masalah nyata. Saya menggabungkan logika teknis dan kreativitas untuk menciptakan pengalaman pengguna yang mulus di berbagai platform.
                 </p>
+              </section>
+
+               {/* Game Studio Section */}
+              <section className="bg-gradient-to-br from-indigo-600 to-violet-700 p-8 rounded-3xl text-white shadow-xl">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                  <div>
+                    <h2 className="text-2xl font-black mb-2">Senin Terus Studio</h2>
+                    <p className="text-indigo-100 opacity-90">Independent Game Developer • Creating fun on Itch.io & Play Store</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <a href="https://seninterus.itch.io" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white text-indigo-600 rounded-xl font-bold hover:bg-indigo-50 transition-colors shadow-lg">
+                      Itch.io
+                    </a>
+                    <a href="https://play.google.com/store/apps/dev?id=9004420762141640273" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-indigo-500 text-white rounded-xl font-bold hover:bg-indigo-400 border border-indigo-400 transition-colors shadow-lg">
+                      Play Store
+                    </a>
+                  </div>
+                </div>
               </section>
 
               {/* Pendidikan */}
