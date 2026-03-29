@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Tugas Kelompok 4 - React & Tailwind Profile
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyek ini adalah aplikasi web sederhana yang dibangun menggunakan **React** dan **Tailwind CSS**. Aplikasi ini menampilkan profil anggota Kelompok 4 sebagai bagian dari tugas mata kuliah/pelatihan pengembangan web.
 
-## Available Scripts
+## 🚀 Fitur Utama
+- **Desain Modern & Responsif**: Menggunakan Tailwind CSS untuk antarmuka yang bersih dan estetik.
+- **Profil Anggota**: Halaman profil individu yang menampilkan informasi diri, pendidikan, dan fokus belajar.
+- **Interaktif**: Tombol dan efek hover yang meningkatkan pengalaman pengguna.
 
-In the project directory, you can run:
+## 👥 Anggota Kelompok 4
+1. **Moch Azriel AP**
+2. **Nada Arina**
+3. **Naufal Rakha Putra**
 
-### `npm start`
+## 🛠️ Teknologi yang Digunakan
+- **React**: Library JavaScript untuk membangun antarmuka pengguna.
+- **Tailwind CSS**: Framework CSS utility-first untuk styling yang cepat dan fleksibel.
+- **React Router Dom**: Untuk navigasi antar halaman (jika diaktifkan).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💻 Cara Menjalankan Proyek
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di mesin lokal Anda:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone Repositori**
+   ```bash
+   git clone https://github.com/ShiKuro01/GroupProject4.git
+   cd GroupProject4
+   ```
 
-### `npm test`
+2. **Instal Dependensi**
+   Pastikan Anda telah menginstal [Node.js](https://nodejs.org/).
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Jalankan Aplikasi**
+   ```bash
+   npm start
+   ```
+   Buka [http://localhost:3000](http://localhost:3000) untuk melihat hasilnya di browser.
 
-### `npm run build`
+## 📂 Struktur Folder
+```text
+src/
+├── assets/          # File gambar dan aset statis
+├── myPages/         # Komponen halaman profil anggota
+│   ├── nadaProfile.js
+│   ├── naufalProfile.js
+│   └── profilePages.js
+├── App.js           # Komponen utama aplikasi
+└── index.js         # Entry point aplikasi
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📝 Catatan
+Proyek ini dibuat sebagai bentuk pembelajaran dalam mengimplementasikan framework React dan integrasi Tailwind CSS dalam sebuah proyek tim.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+© 2026 Kelompok 4 - T2A.
