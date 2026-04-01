@@ -105,25 +105,24 @@ const ProfilePages = () => {
             {/* Social Media */}
             <div className="bg-teal-50/50 rounded-xl p-6 border border-teal-100 mt-8 flex justify-center gap-12">
               <div className="flex flex-col items-center gap-2 cursor-pointer group">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-gray-700 shadow-sm border border-gray-200 group-hover:border-teal-500 group-hover:text-teal-500 transition-colors">
+                <a href="https://github.com/ShiKuro01" className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-gray-700 shadow-sm border border-gray-200 group-hover:border-teal-500 group-hover:text-teal-500 transition-colors">
                   G
-                </div>
-                <span className="text-xs font-medium text-gray-500 group-hover:text-teal-600">GitHub</span>
+                </a>
+                <span  className="text-xs font-medium text-gray-500 group-hover:text-teal-600">GitHub</span>
               </div>
               <div className="flex flex-col items-center gap-2 cursor-pointer group">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-gray-700 shadow-sm border border-gray-200 group-hover:border-teal-500 group-hover:text-teal-500 transition-colors">
+                <a href="https://www.linkedin.com/in/moch-azriel-allyandra-permana-01ab83377/" className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-gray-700 shadow-sm border border-gray-200 group-hover:border-teal-500 group-hover:text-teal-500 transition-colors">
                   L
-                </div>
+                </a>
                 <span className="text-xs font-medium text-gray-500 group-hover:text-teal-600">LinkedIn</span>
               </div>
               <div className="flex flex-col items-center gap-2 cursor-pointer group">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-gray-700 shadow-sm border border-gray-200 group-hover:border-teal-500 group-hover:text-teal-500 transition-colors">
+                <a href="https://skro-studio.booth.pm/" className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-gray-700 shadow-sm border border-gray-200 group-hover:border-teal-500 group-hover:text-teal-500 transition-colors">
                   S
-                </div>
+                </a>
                 <span className="text-xs font-medium text-gray-500 group-hover:text-teal-600">SKRO Studio</span>
               </div>
             </div>
-
           </div>
         </div>
       </div>
