@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProfilePages from './myPages/profilePages';
+import NaufalProfile from './myPages/naufalProfile';
+import NadaProfile from './myPages/nadaProfile';
 
 function App() {
   return (
@@ -8,6 +12,13 @@ function App() {
         Tugas Kelompok 4 - Berhasil Pakai Tailwind!
       </h1>
     </div>
+  <Router>
+      <Routes>
+       <Route path="/azriel" element={<ProfilePages />} />
+       <Route path="/naufal" element={<NaufalProfile />} />
+       <Route path="/nada" element={<NadaProfile />} />
+      </Routes>
+    </Router>
   );
 }
 
