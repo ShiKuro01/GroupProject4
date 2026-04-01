@@ -1,20 +1,20 @@
 import React from 'react';
-import pp from '../assets/pp_naufal.jpg';
+import profilePicture from '../assets/pp_naufal.jpg';
 
 const NaufalProfile = () => {
-  const skills = ['ReactJS', 'Tailwind CSS', 'Next.js', 'PostgreSQL', 'Laravel', 'Docker'];
+  const skills = ['ReactJS', 'Tailwind CSS', 'Kotlin', 'PostgreSQL', 'Laravel', 'Docker'];
 
   return (
-    <div className="min-h-screen bg-slate-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-slate-20 py-2 sm:px-6 lg:px-8">
       {/* Container Utama */}
-      <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+      <div className="max-w-[80%] mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
         
         {/* Header / Banner Area */}
-        <div className="relative h-48 bg-gradient-to-r from-teal-500 to-emerald-600">
+        <div className="relative h-24 bg-gradient-to-r from-indigo-600 to-violet-700">
           <div className="absolute -bottom-16 left-8">
             <img 
               className="h-32 w-32 object-cover rounded-2xl border-4 border-white shadow-xl bg-white" 
-              src={pp}
+              src={profilePicture} 
               alt="Profile Naufal" 
             />
           </div>
@@ -25,10 +25,10 @@ const NaufalProfile = () => {
           <div className="md:flex md:items-center md:justify-between">
             <div>
               <h1 className="text-4xl font-black text-gray-900 tracking-tight">Naufal Rakha Putra</h1>
-              <p className="text-teal-600 font-medium text-lg mt-1">Full Stack Developer & Student</p>
+              <p className="text-indigo-600 font-medium text-lg mt-1">Full Stack, Game, & Mobile Developer</p>
             </div>
             <div className="mt-4 md:mt-0 flex gap-3">
-              <button className="px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-xl transition duration-300 shadow-lg shadow-teal-200">
+              <button className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition duration-300 shadow-lg shadow-indigo-200">
                 Hubungi Saya
               </button>
               <button className="px-5 py-2.5 border-2 border-slate-200 hover:border-slate-300 text-slate-600 font-bold rounded-xl transition duration-300">
@@ -74,21 +74,39 @@ const NaufalProfile = () => {
             <div className="md:col-span-2 space-y-10">
               {/* Tentang Diri */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-4 border-teal-500 w-fit pb-1">Tentang Diri</h2>
+                <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-4 border-indigo-500 w-fit pb-1">Tentang Diri</h2>
                 <p className="text-gray-600 leading-relaxed text-justify text-lg italic">
-                  "Halo! Saya Naufal, mahasiswa Teknologi Informasi yang memiliki passion besar dalam membangun ekosistem digital yang bermakna."
+                  "Halo! Saya Naufal, mahasiswa Teknologi Informasi yang memiliki passion dalam membangun ekosistem digital mulai dari Web, Game, hingga Mobile (Android Studio & Kotlin)."
                 </p>
                 <p className="mt-4 text-gray-600 leading-relaxed text-justify">
-                  Saya memiliki ketertarikan mendalam dalam eksplorasi teknologi web modern. Saat ini saya sedang berfokus untuk menguasai performa front-end menggunakan ReactJS dan skalabilitas back-end. Perjalanan saya di dunia teknologi dimulai dengan rasa penasaran yang kuat terhadap bagaimana sebuah aplikasi dapat menyelesaikan masalah nyata. Dengan latar belakang pendidikan di Sistem Informasi, saya menggabungkan logika bisnis dan teknis untuk menciptakan pengalaman pengguna yang intuitif.
+                  Saya memiliki ketertarikan mendalam dalam eksplorasi teknologi digital modern. Saat ini saya sedang berfokus untuk menguasai Full Stack Development, pengembangan mobile menggunakan Kotlin, serta eksplorasi dalam industri game. Perjalanan saya di dunia teknologi dimulai dengan rasa penasaran terhadap bagaimana aplikasi dapat menyelesaikan masalah nyata. Saya menggabungkan logika teknis dan kreativitas untuk menciptakan pengalaman pengguna yang mulus di berbagai platform.
                 </p>
+              </section>
+
+               {/* Game Studio Section */}
+              <section className="bg-gradient-to-br from-indigo-600 to-violet-700 p-8 rounded-3xl text-white shadow-xl">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                  <div>
+                    <h2 className="text-2xl font-black mb-2">Senin Terus Studio</h2>
+                    <p className="text-indigo-100 opacity-90">Independent Game Developer • Creating fun on Itch.io & Play Store</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <a href="https://seninterus.itch.io" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white text-indigo-600 rounded-xl font-bold hover:bg-indigo-50 transition-colors shadow-lg">
+                      Itch.io
+                    </a>
+                    <a href="https://play.google.com/store/apps/dev?id=9004420762141640273" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-indigo-500 text-white rounded-xl font-bold hover:bg-indigo-400 border border-indigo-400 transition-colors shadow-lg">
+                      Play Store
+                    </a>
+                  </div>
+                </div>
               </section>
 
               {/* Pendidikan */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-4 border-teal-500 w-fit pb-1">Pendidikan</h2>
+                <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-4 border-indigo-500 w-fit pb-1">Pendidikan</h2>
                 <div className="space-y-4">
                   <div className="flex gap-4">
-                    <div className="w-1.5 bg-teal-500 rounded-full"></div>
+                    <div className="w-1.5 bg-indigo-500 rounded-full"></div>
                     <div>
                       <h4 className="font-bold text-gray-900">Universitas Brawijaya</h4>
                       <p className="text-sm text-slate-500">D3 Teknologi Informasi • 2025 - Sekarang</p>
@@ -99,25 +117,25 @@ const NaufalProfile = () => {
               </section>
 
               {/* Social Media Link */}
-              <section className="bg-teal-50 p-8 rounded-3xl border border-teal-100">
+              <section className="bg-indigo-50 p-8 rounded-3xl border border-indigo-100">
                 <div className="flex justify-around items-center gap-4">
-                  <a href="#" className="flex flex-col items-center group">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                  <a href="https://github.com/sternnaufal" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
+                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
                       <span className="text-xl font-bold">G</span>
                     </div>
-                    <span className="text-xs mt-2 font-bold text-teal-700">GitHub</span>
+                    <span className="text-xs mt-2 font-bold text-indigo-700">GitHub</span>
                   </a>
-                  <a href="#" className="flex flex-col items-center group">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                  <a href="https://linkedin.com/in/naufal-rakha-putra-a0130332a" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
+                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
                       <span className="text-xl font-bold">L</span>
                     </div>
-                    <span className="text-xs mt-2 font-bold text-teal-700">LinkedIn</span>
+                    <span className="text-xs mt-2 font-bold text-indigo-700">LinkedIn</span>
                   </a>
-                  <a href="#" className="flex flex-col items-center group">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
-                      <span className="text-xl font-bold">I</span>
+                  <a href="https://naufalrakha.my.id" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
+                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                      <span className="text-xl font-bold">W</span>
                     </div>
-                    <span className="text-xs mt-2 font-bold text-teal-700">Instagram</span>
+                    <span className="text-xs mt-2 font-bold text-indigo-700">Website</span>
                   </a>
                 </div>
               </section>
