@@ -7,12 +7,14 @@ import NadaProfile from './myPages/nadaProfile';
 
 function App() {
   return (
+  <Router>
+    
     <div className="bg-blue-500 min-h-screen flex items-center justify-center">
       <h1 className="text-white text-4xl font-bold p-10 bg-black rounded-lg">
         Tugas Kelompok 4 - Berhasil Pakai Tailwind!
       </h1>
     </div>
-  <Router>
+    
       <Routes>
        <Route path="/azriel" element={<ProfilePages />} />
        <Route path="/naufal" element={<NaufalProfile />} />
