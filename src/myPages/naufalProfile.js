@@ -1,4 +1,5 @@
 import React from 'react';
+import pp from '../assets/pp_naufal.jpg';
 
 const NaufalProfile = () => {
   const skills = ['ReactJS', 'Tailwind CSS', 'Next.js', 'PostgreSQL', 'Laravel', 'Docker'];
@@ -13,7 +14,7 @@ const NaufalProfile = () => {
           <div className="absolute -bottom-16 left-8">
             <img 
               className="h-32 w-32 object-cover rounded-2xl border-4 border-white shadow-xl bg-white" 
-              src="https://api.dicebear.com/7.x/avataaars/svg?seed=Naufal" 
+              src={pp}
               alt="Profile Naufal" 
             />
           </div>
