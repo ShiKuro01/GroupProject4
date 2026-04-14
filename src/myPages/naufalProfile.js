@@ -4,6 +4,12 @@ import profilePicture from '../assets/pp_naufal.jpg';
 const NaufalProfile = () => {
   const skills = ['ReactJS', 'Tailwind CSS', 'Kotlin', 'PostgreSQL', 'Laravel', 'Docker'];
 
+  const socialLinks = [
+    { name: 'GitHub', url: 'https://github.com/sternnaufal', icon: 'G' },
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/naufal-rakha-putra-a0130332a', icon: 'L' },
+    { name: 'Website', url: 'https://naufalrakha.my.id', icon: 'W' },
+  ];
+
   return (
     <div className="min-h-screen bg-slate-20 py-2 sm:px-6 lg:px-8">
       {/* Container Utama */}
@@ -119,24 +125,14 @@ const NaufalProfile = () => {
               {/* Social Media Link */}
               <section className="bg-indigo-50 p-8 rounded-3xl border border-indigo-100">
                 <div className="flex justify-around items-center gap-4">
-                  <a href="https://github.com/sternnaufal" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
-                      <span className="text-xl font-bold">G</span>
-                    </div>
-                    <span className="text-xs mt-2 font-bold text-indigo-700">GitHub</span>
-                  </a>
-                  <a href="https://linkedin.com/in/naufal-rakha-putra-a0130332a" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
-                      <span className="text-xl font-bold">L</span>
-                    </div>
-                    <span className="text-xs mt-2 font-bold text-indigo-700">LinkedIn</span>
-                  </a>
-                  <a href="https://naufalrakha.my.id" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
-                      <span className="text-xl font-bold">W</span>
-                    </div>
-                    <span className="text-xs mt-2 font-bold text-indigo-700">Website</span>
-                  </a>
+                  {socialLinks.map((link) => (
+                    <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
+                      <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <span className="text-xl font-bold">{link.icon}</span>
+                      </div>
+                      <span className="text-xs mt-2 font-bold text-indigo-700">{link.name}</span>
+                    </a>
+                  ))}
                 </div>
               </section>
             </div>
