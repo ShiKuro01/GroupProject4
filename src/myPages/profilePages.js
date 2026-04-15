@@ -5,7 +5,7 @@ const ProfilePages = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6 font-sans">
       {/* Main Container */}
-      <div className="max-w-4xl w-full bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div className="max-w-[80%] w-full bg-white rounded-2xl shadow-lg overflow-hidden">
         
         {/* Banner */}
         <div className="h-32 bg-teal-500 relative">
