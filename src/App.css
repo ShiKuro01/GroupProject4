@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-red-500 {
+  opacity: 0.5;
+}
+
+.Tech {
+  background-color: #2bff00;
+}
+
+.Fashion {
+  background-color: #c52246;
+}
+
+.Food {
+  background-color: #c58722;
+}
+
+.card {
+  width: 30%;
+  max-height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow:inset -5px -5px 1px #000000;
+}
